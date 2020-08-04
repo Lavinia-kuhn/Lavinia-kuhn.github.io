@@ -1,0 +1,219 @@
+body{
+    margin: 0;
+}
+
+header{
+    background-color: darkseagreen;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    z-index: 10; /*fica sobre os demais elementos*/
+}
+
+#logo{
+    position: absolute;
+    margin-left: 3%;
+    height: 100%;
+}
+
+#menu{
+    float: right;
+    color: white;
+    margin-right: 5%;
+    list-style: none; /*tira a bolinha da lista*/
+    margin-top: 0;
+}
+
+li{
+    float: left; /*alinha a esquerda*/
+    padding: 20 10 20 10;
+}
+
+li:hover{
+    background-color: white; 
+    color: darkseagreen;
+    border: none;
+}
+
+#capa{
+    text-align: center;
+    background: url(img/photo-of-vegetable-salad-in-bowls-1640770.jpg);
+    height: 100%;
+    background-size: cover; /*utilizar 100% da tela*/
+    padding-top: 9%;
+    box-sizing: border-box;
+}
+
+#quadro{
+    border-radius: 25px;
+    width: 60%;
+    height: 87%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: rgb(175, 214, 160);
+}
+
+#imgCentral{
+    height: 50%;
+    width: 50%;
+}
+
+#paragrafo{
+    line-height: 1.7;
+    font-size: 20px;
+}
+
+.lista{
+    text-decoration: none; /*tira a estilização(linha abaixo do link)*/
+    text-shadow: none; 
+}
+
+section{
+    padding: 2%;
+}
+
+#projeto{
+    padding-left: 2%;
+    padding-top: 2%;
+    background-color: white;
+}
+
+#metas{
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 24%;
+    background-color:rgba(162, 238, 160, 0.596);
+}
+
+
+#sobre{
+    padding-left: 5%;
+    box-sizing: border-box;
+    padding-top: 2%;
+    height: 80%;
+    background-color:rgba(162, 238, 160, 0.596);
+}
+
+#infos{
+    padding-top: 15%;
+    padding-bottom: 15%;
+    font-size: 20px;
+}
+
+.linha{
+    width: 40%;
+}
+
+.coluna{
+    float: left;
+    padding: 0 5%;
+    position: relative;
+    width: 40%;
+    font-size: 20px;
+}
+
+.coluna3{
+    float: left;
+    padding: 3% 5% 3% 5%;
+    position: relative;
+    width: 23%;
+    font-size: 20px;
+}
+
+.centralizado{
+    text-align: center;
+}
+
+.justificado{
+    text-align: justify;
+}
+
+.icon{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 25%;
+}
+
+#curiosidades{
+    padding-left: 5%;
+    box-sizing: border-box;
+    padding-top: 2%;
+}
+
+#imgMundo{
+    height: 40%;
+    text-align: center;
+}
+
+#eu{
+    width: 80%;
+    height: 100%;
+}
+
+footer{
+    background-color: rgb(107, 156, 107);
+    color: white;
+    float: left;
+    width: 100%;
+}
+
+@media all and (max-width: 768px){
+    #menu{
+        visibility: hidden;
+    }
+
+    .coluna, .coluna3{
+        display: block; /*vai ocupar toda a linha como um bloco*/
+        width: 80%;
+        padding: 0;
+        margin: 10px auto;
+        float: none;
+    }
+
+    #logo{
+        margin-left: 0px;
+        transform: translate(280%);
+    }
+
+    #quadro{
+        margin-top: 18%;
+        font-size: 15px;
+        width: 90%;
+        height: 80%;
+    }
+
+    #paragrafo{
+        font-size: 17px;
+    }
+
+    #imgCentral{
+        height: 35%;
+        width: 70%;
+    }
+
+    #sobre{
+        height: 100%;
+    }
+
+    #imgMundo{
+        margin-left: 17%;
+    }
+
+    #infos{
+        padding-top: 0;
+        padding-bottom: 0;
+        font-size: 18px;
+    }
+
+    #eu{
+        height: 43%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    #footer{
+        float: none;
+        height: 0;
+    }
+}
